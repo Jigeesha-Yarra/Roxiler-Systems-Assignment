@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Transaction Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **React-based** web application that displays transaction data in a table, along with statistics, a bar chart, and a pie chart. The app allows users to filter transactions by month and search for specific transactions.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **Transactions Table**:
+   - Displays all transactions in a table format.
+   - Supports filtering by month (January to December).
+   - Supports searching by title, description, or price.
+   - Pagination support (default: 10 transactions per page).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Statistics**:
+   - Displays the total sale amount, total sold items, and total not sold items for the selected month.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Bar Chart**:
+   - Visualizes the number of items in different price ranges for the selected month.
 
-### `npm test`
+4. **Pie Chart**:
+   - Visualizes the distribution of transactions across different categories for the selected month.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **Responsive Design**:
+   - The app is fully responsive and works well on all screen sizes (desktop, tablet, and mobile).
 
-### `npm run build`
+6. **Animations**:
+   - Smooth fade-in animations for components when the page loads.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**:
+  - React.js
+  - Axios (for fetching data)
+  - React ChartJS 2 (for bar and pie charts)
+  - CSS (for styling and animations)
 
-### `npm run eject`
+- **Data Source**:
+  - Local JSON file (`data.json`) containing transaction data.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to Run the Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js and npm installed on your machine.
 
-## Learn More
+### Steps
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/transaction-dashboard.git
+   cd transaction-dashboard
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Folder Structure
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+transaction-dashboard/
+├── public/
+│   ├── data.json              # Transaction data
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── TransactionsTable.js # Component for transactions table
+│   │   ├── Statistics.js      # Component for statistics
+│   │   ├── BarChart.js        # Component for bar chart
+│   │   └── PieChart.js       # Component for pie chart
+│   ├── App.js                 # Main component
+│   ├── index.js               # Entry point
+│   ├── styles.css             # Global styles
+│   └── utils.js               # Utility functions
+├── package.json               # Project dependencies
+└── README.md                  # Project documentation  
