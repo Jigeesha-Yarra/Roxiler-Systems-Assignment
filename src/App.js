@@ -13,8 +13,9 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('/data.json')
+    axios.get(`${process.env.PUBLIC_URL}/data.json`)
       .then((response) => {
+        console.log('Fetched Data:', response.data);
         setTransactions(response.data);
         setLoading(false);
       })
