@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Roxiler-Systems-Assignment/static/css/main.14df29ab.css",
-    "main.js": "/Roxiler-Systems-Assignment/static/js/main.5783f019.js",
+    "main.js": "/Roxiler-Systems-Assignment/static/js/main.d7e18cb5.js",
     "static/js/453.b358f5c0.chunk.js": "/Roxiler-Systems-Assignment/static/js/453.b358f5c0.chunk.js",
     "index.html": "/Roxiler-Systems-Assignment/index.html",
     "main.14df29ab.css.map": "/Roxiler-Systems-Assignment/static/css/main.14df29ab.css.map",
-    "main.5783f019.js.map": "/Roxiler-Systems-Assignment/static/js/main.5783f019.js.map",
+    "main.d7e18cb5.js.map": "/Roxiler-Systems-Assignment/static/js/main.d7e18cb5.js.map",
     "453.b358f5c0.chunk.js.map": "/Roxiler-Systems-Assignment/static/js/453.b358f5c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.14df29ab.css",
-    "static/js/main.5783f019.js"
+    "static/js/main.d7e18cb5.js"
   ]
 }
