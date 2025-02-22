@@ -13,7 +13,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`${process.env.PUBLIC_URL}/data.json`)
+    axios.get('https://raw.githubusercontent.com/Jigeesha-Yarra/Roxiler-Systems-Assignment/main/public/data.json')
       .then((response) => {
         console.log('Fetched Data:', response.data);
         setTransactions(response.data);
